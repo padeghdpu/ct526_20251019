@@ -29,12 +29,12 @@ def summation( inputnumber1 , inputnumber2 ):
 
 
 
-@app.route("/concat/<inputnumber1>/<inputnumber2>")
-def concat( inputnumber1 , inputnumber2 ): 
+@app.route("/concat/<value1>/<value2>")
+def concat( value1 , value2 ): 
 
    try:
-      displayvalue = str(inputnumber1) + str(inputnumber2)
-      displayvalue =  "The result of concatination between " + str(inputnumber1) + " and " + str (inputnumber2) + " is " +  str(displayvalue)
+      displayvalue = str(value1) + str(value2)
+      displayvalue =  "The result of concatination between " + str(value1) + " and " + str (value2) + " is " +  str(displayvalue)
    
      
 
