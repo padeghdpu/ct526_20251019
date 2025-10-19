@@ -19,8 +19,6 @@ def summation( inputnumber1 , inputnumber2 ):
       displayvalue = int(inputnumber1) + int(inputnumber2)
       displayvalue =  "The result of sum between " + str(inputnumber1) + " and " + str (inputnumber2) + " is " +  str(displayvalue)
    
-     
-
    except:   
       displayvalue =  "You are using miss data type for operation"
  
@@ -32,15 +30,9 @@ def summation( inputnumber1 , inputnumber2 ):
 @app.route("/concat/<value1>/<value2>")
 def concat( value1 , value2 ): 
 
-   try:
-      displayvalue = str(value1) + str(value2)
-      displayvalue =  "The result of concatination between " + str(value1) + " and " + str (value2) + " is " +  str(displayvalue)
-   
-     
-
-   except:   
-      displayvalue =  "You are using miss data type for operation"
- 
+   displayvalue = str(value1) + str(value2)
+   displayvalue =  "The result of concatination between " + str(value1) + " and " + str (value2) + " is " +  str(displayvalue)
+    
    return render_template("index.html" ,    result= displayvalue )   
 
 
